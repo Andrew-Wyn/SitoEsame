@@ -152,3 +152,32 @@ figure:hover:before {
     transform: rotate(360deg);
     cursor: pointer;
 }
+
+.cont_list{
+    background-color: dimgrey;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #ee6e73;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cont_list > ul > li{
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 3px;
+    transition: all 0.3s ease-in;
+}
+
+.cont_list > ul > li:hover{
+    transform: translateX(5px);
+    background-color: white;
+    color: black;
+}
