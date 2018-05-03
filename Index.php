@@ -120,9 +120,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/1.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/1.png">
 
                         <figcaption>
                             crittografica simmetrica
@@ -145,9 +145,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/2.jpg">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/2.jpg">
 
                         <figcaption>
                             DES
@@ -170,9 +170,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/3.jpg">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/3.jpg">
 
                         <figcaption>
                             3-DES
@@ -209,9 +209,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/4.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/4.png">
 
                         <figcaption>
                             IDEA
@@ -243,9 +243,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/5.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/5.png">
 
                         <figcaption>
                             Substitute Bytes
@@ -263,9 +263,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/6.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/6.png">
 
                         <figcaption>
                             Shift Rows
@@ -283,9 +283,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/7.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/7.png">
 
                         <figcaption>
                             Mix Columns
@@ -303,9 +303,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/5.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/8.png">
 
                         <figcaption>
                             Add Round Key
@@ -329,9 +329,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaAsimm/2.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaAsimm/2.png">
 
                         <figcaption>
                             Modalita Confidenziale
@@ -348,9 +348,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaAsimm/1.jpg">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaAsimm/1.jpg">
 
                         <figcaption>
                             Modalita Autenticazione
@@ -407,7 +407,7 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
                         <img style="width: 100%;" src="img/Crittografia/fde1.PNG">
 
@@ -427,7 +427,7 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 30%;" id="immagine" class="cap-left">
+                    <div style="width: 20%;" id="immagine" class="cap-left">
 
                         <img style="width: 100%;" src="img/Crittografia/fde2.PNG">
 
