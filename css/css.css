@@ -153,7 +153,7 @@ figure:hover:before {
     cursor: pointer;
 }
 
-.cont_list{
+.cont_listg{
     background-color: dimgrey;
     border-radius: 5px;
     padding: 5px;
@@ -165,11 +165,11 @@ figure:hover:before {
 }
 
 .cont_list > ul > li{
+    background-color: #ee6e73;
     color: white;
     border-color: white;
     border-style: solid;
     border-width: 2px;
-    margin: 5px;
     border-radius: 5px;
     font-size: 18px;
     padding: 3px;
@@ -180,4 +180,7 @@ figure:hover:before {
     transform: translateX(5px);
     background-color: white;
     color: black;
+    border-color: #ee6e73;
+    border-style: solid;
+    border-width: 2px;
 }

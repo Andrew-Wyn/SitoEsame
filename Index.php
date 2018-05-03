@@ -74,7 +74,7 @@
             <div class="background">
                 <img src="img/tpsbg.jpg">
             </div>
-            <a href="#!name"><span class="white-text name">T.P.S.I.</span></a>
+            <a href="#!name"><span class="white-text name">TPS & Informatica</span></a>
             <a href="#!email"><span class="white-text email">Cordva</span></a>
             </div></li>
             <li><a onclick="rightScroll('ApCord')" class="waves-effect">Apache Cordova</a></li>
@@ -234,11 +234,11 @@
                 </ul>
             </div>
             <h5 id="item-1-2">Funzionamento</h5>
-            AES è un <strong>cifrario a blocchi</strong> (block cipher) con lunghezza del blocco di 128 bit, ma può avere chiavi inndipendenti l'una dall'altra con lungheza variabiledi 128, 192 o 256 bit, ed effettua una combinazione di <strong>permutazioni</strong> e <strong>sostituzioni</strong>.<br><br>
-            La prima operazione eseguita dall'algoritmo è quella di prendere i 128 bit del blocco (16 caratteri = 128/8) e di disporli in una griglia 4*4 byte, fatto cio si sottopone il blocco a 10 round di cifratura composti da 4 operazioni (tranne il 10esimo round che è composto da solo 3 operazioni).<br><br>
-            Le operazioni sono le seguenti:<br><br>
+            AES è un <strong>cifrario a blocchi</strong> (block cipher) con lunghezza del blocco di 128 bit, ma può avere chiavi indipendenti l'una dall'altra con lungheza variabiledi 128, 192 o 256 bit, il funzionamento dell'AES si basa su una combinazione di <strong>permutazioni</strong> e <strong>sostituzioni</strong>.<br><br>
+            La prima operazione eseguita dall'algoritmo è quella di prendere i 128 bit del blocco (16 caratteri = 128/8) e di disporli in una griglia 4*4 byte, fatto cio si sottopone il blocco a 10 round di cifratura composti da 4 operazioni di round (tranne il 10esimo round che è composto da solo 3 operazioni di round).<br><br>
+            Le operazioni di round sono le seguenti:<br><br>
 
-            <div style="border-bottom: solid 2px; margin-top: 15px; margin-bottom: 5px;" class="row">
+            <div style="margin-top: 15px; margin-bottom: 5px;" class="row">
 
 
                 <div class="col-8 cap-left">
@@ -258,7 +258,7 @@
                 </div>
             </div>
 
-            <div style="border-bottom: solid 2px; margin-top: 15px; margin-bottom: 5px;" class="row">
+            <div style="margin-top: 15px; margin-bottom: 5px;" class="row">
 
 
                 <div class="col-8 cap-left">
@@ -278,7 +278,7 @@
                 </div>
             </div>
 
-            <div style="border-bottom: solid 2px; margin-top: 15px; margin-bottom: 5px;" class="row">
+            <div style="margin-top: 15px; margin-bottom: 5px;" class="row">
 
 
                 <div class="col-8 cap-left">
@@ -542,7 +542,7 @@
         
         <!-- TPSI -->
         <div id="test3" class="col s12 container">
-            <h1>TPSI</h1>
+            <h1>TPSI & Informatica</h1>
             <h3 id="ApCord">Apache Cordova</h3>
             Apache Cordova è un framework per lo sviluppo di applicativi per dispoditivi originariamente creato da Nitobi.<br>
             Apache cordova permette ai programmatori di creare applicazioni mobili utilizando CSS3, HTML5, JavaScript e relativi framework invece di affidarsi ad API specifiche delle piattaforme Android, IOS o Windows Phone.<br>
