@@ -569,6 +569,21 @@
                 <li><strong>sessionstorage:</strong> la visibilità delle chiavi appartenenti a questa istanza, è limitata alla finestra del browser in cui questa variabile è stata creata. Una volta chiusa a finestra, i dati contenuti in questa istanza verranno distrutti assieme alla finestra stessa. Un’istanza di questo tipo è indicata per casi in cui una transazione è legata ad una singola finestra dell’utente che però può a sua volta avere aperte più finestre del browser con diverse transazioni tutte operative allo stesso tempo.</li>
             </ul>
             <h3 id="app">L' App</h3>
+            <div style="height: 1000px;">
+            
+                <div class="gallery">
+                  <ul class="gallery_thumbnails">
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='120'%20viewBox='0%200%2080%20120'%3E%3Crect%20fill='rgb(94,141,186)'%20width='80'%20height='120'/%3E%3Ctext%20x='40'%20y='68'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E80×120%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(94,141,186)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(123,131,183)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(123,131,183)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(159,111,169)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(159,111,169)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='120'%20viewBox='0%200%2080%20120'%3E%3Crect%20fill='rgb(192,114,88)'%20width='80'%20height='120'/%3E%3Ctext%20x='40'%20y='68'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E80×120%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(192,114,88)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(198,156,83)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(198,156,83)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(125,186,94)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(125,186,94)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='120'%20viewBox='0%200%2080%20120'%3E%3Crect%20fill='rgb(94,174,186)'%20width='80'%20height='120'/%3E%3Ctext%20x='40'%20y='68'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E80×120%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(94,174,186)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E"/></li>
+                  </ul>
+                  <div class="gallery_featured" id="selectedImage"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(94,141,186)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E" alt=""/></div>
+                </div>             
+            </div>
         </div>
         <footer class="page-footer">
           <div class="container">
@@ -594,5 +609,46 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/materialize.min.js"></script>
         <script src="js/js.js"></script>
+        <script>
+            var root = document.documentElement;
+            root.className = root.className.replace(/\bno-js\b/g, '') + ' js';
+
+            // Domready check in vanila javaScript
+            // Arrays and node lists
+            var ready = function ( fn ) {
+
+            // Sanity check
+              if ( typeof fn !== 'function' ) return;
+
+            // If document is already loaded, run method
+              if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+                return fn();
+              }
+
+            // Otherwise, wait until document is loaded
+              document.addEventListener( 'DOMContentLoaded', fn, false );
+
+            };
+
+            ready(function() {
+
+              root.className = root.className.replace(/\bdombuilding\b/g, '') + ' domready';
+
+              var thumbs = document.querySelectorAll( '.gallery_thumb' );
+              var selectedImage =  document.querySelector('#selectedImage');
+
+              for ( var i = 0, len = thumbs.length; i < len; i++ ) {
+
+                thumbs[i].addEventListener( 'click', function( event ) {
+
+                  var firstChild = this.firstChild;
+                  var dataOsrc = firstChild.getAttribute('data-osrc');
+                  // console.log(dataOsrc);
+                  selectedImage.firstChild.setAttribute('src', dataOsrc);
+                }, false);
+
+              }
+            });
+        </script>
     </body>
 </html>

@@ -184,3 +184,66 @@ figure:hover:before {
     border-style: solid;
     border-width: 2px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  overflow: auto;
+  margin: 1.5em 2em;
+}
+
+.gallery_thumbnails {
+  text-align: center;
+  overflow: auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.gallery_thumb {
+  position: relative;
+  float: left;
+  margin-right: 1em;
+}
+
+.gallery_thumb img {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.gallery_featured {
+  float: left;
+  /* max-width: 600px; */
+}
+
+
+@media (min-width: 760px) {
+  .gallery,
+  .gallery_thumbnails {
+    float: left;
+  }
+
+  .gallery_thumbnails {
+    width: 6em;
+    padding-right: 2em;
+  }
+
+  .gallery_thumb {
+    float: none;
+    margin-right: 0;
+  }
+
+}
