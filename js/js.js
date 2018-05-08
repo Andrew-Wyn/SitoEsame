@@ -27,6 +27,14 @@ $(document).ready(function(){
        $("html,body").animate({scrollTop: 0}, 1000, function(){});
     });
 
+     $(document).scroll(function(){
+         var heightGall =  $(".gallery").offset().top + $(".gallery").height() - 100;
+       if($(".gallery").offset().top - 100 < $(window).scrollTop() && heightGall > $(window).scrollTop()){
+           $("#selectedImage").addClass("fixedImage");
+       } else {
+           $("#selectedImage").removeClass("fixedImage");
+       }
+    });
 
 });
         

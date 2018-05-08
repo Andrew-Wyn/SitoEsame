@@ -200,7 +200,7 @@ svg {
 }
 
 .gallery {
-  overflow: auto;
+  position: relative;
   margin: 1.5em 2em;
 }
 
@@ -222,28 +222,42 @@ svg {
 .gallery_thumb img {
   margin-bottom: 1em;
   cursor: pointer;
+    box-shadow: 5px 5px 5px #dedede;
 }
 
 .gallery_featured {
-  float: left;
-  /* max-width: 600px; */
+    float: left;
+    /* max-width: 600px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 
 @media (min-width: 760px) {
-  .gallery,
-  .gallery_thumbnails {
-    float: left;
-  }
+    .gallery,
+    .gallery_thumbnails {}
 
-  .gallery_thumbnails {
-    width: 6em;
-    padding-right: 2em;
-  }
+    .gallery_thumbnails {
+        width: 6em;
+        padding-right: 2em;
+        width: 30%;
+    }
 
-  .gallery_thumb {
-    float: none;
-    margin-right: 0;
-  }
+    .gallery_thumb {
+        float: none;
+        /*margin-right: 0;*/
+    }
+    .gallery_featured {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
 
+.fixedImage{
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 20% !important;
 }

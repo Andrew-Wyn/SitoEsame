@@ -120,9 +120,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/1.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/1.png">
 
                         <figcaption>
                             crittografica simmetrica
@@ -145,9 +145,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/2.jpg">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/2.jpg">
 
                         <figcaption>
                             DES
@@ -170,9 +170,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/3.jpg">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/3.jpg">
 
                         <figcaption>
                             3-DES
@@ -209,9 +209,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/4.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/4.png">
 
                         <figcaption>
                             IDEA
@@ -243,9 +243,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/5.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/5.png">
 
                         <figcaption>
                             Substitute Bytes
@@ -263,9 +263,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/6.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/6.png">
 
                         <figcaption>
                             Shift Rows
@@ -283,9 +283,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/7.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/7.png">
 
                         <figcaption>
                             Mix Columns
@@ -303,9 +303,9 @@
 
                 <div class="col-8 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaSimm/5.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/8.png">
 
                         <figcaption>
                             Add Round Key
@@ -329,9 +329,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaAsimm/2.png">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaAsimm/2.png">
 
                         <figcaption>
                             Modalita Confidenziale
@@ -348,9 +348,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="../img/CrittografiaAsimm/1.jpg">
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaAsimm/1.jpg">
 
                         <figcaption>
                             Modalita Autenticazione
@@ -407,7 +407,7 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 80%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
                         <img style="width: 100%;" src="img/Crittografia/fde1.PNG">
 
@@ -427,7 +427,7 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 30%;" id="immagine" class="cap-left">
+                    <div style="width: 20%;" id="immagine" class="cap-left">
 
                         <img style="width: 100%;" src="img/Crittografia/fde2.PNG">
 
@@ -569,22 +569,21 @@
                 <li><strong>sessionstorage:</strong> la visibilità delle chiavi appartenenti a questa istanza, è limitata alla finestra del browser in cui questa variabile è stata creata. Una volta chiusa a finestra, i dati contenuti in questa istanza verranno distrutti assieme alla finestra stessa. Un’istanza di questo tipo è indicata per casi in cui una transazione è legata ad una singola finestra dell’utente che però può a sua volta avere aperte più finestre del browser con diverse transazioni tutte operative allo stesso tempo.</li>
             </ul>
             <h3 id="app">L' App</h3>
-            <div style="height: 1000px;">
-            
-                <div class="gallery">
+             <div class="gallery">
                   <ul class="gallery_thumbnails">
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='120'%20viewBox='0%200%2080%20120'%3E%3Crect%20fill='rgb(94,141,186)'%20width='80'%20height='120'/%3E%3Ctext%20x='40'%20y='68'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E80×120%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(94,141,186)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E"/></li>
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(123,131,183)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(123,131,183)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(159,111,169)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(159,111,169)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='120'%20viewBox='0%200%2080%20120'%3E%3Crect%20fill='rgb(192,114,88)'%20width='80'%20height='120'/%3E%3Ctext%20x='40'%20y='68'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E80×120%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(192,114,88)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E"/></li>
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(198,156,83)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(198,156,83)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='120'%20height='80'%20viewBox='0%200%20120%2080'%3E%3Crect%20fill='rgb(125,186,94)'%20width='120'%20height='80'/%3E%3Ctext%20x='59'%20y='47'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E120×80%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3Crect%20fill='rgb(125,186,94)'%20width='600'%20height='400'/%3E%3Ctext%20x='300'%20y='205'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E600×400%3C/text%3E%3C/svg%3E"/></li>
-                    <li class="gallery_thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='120'%20viewBox='0%200%2080%20120'%3E%3Crect%20fill='rgb(94,174,186)'%20width='80'%20height='120'/%3E%3Ctext%20x='40'%20y='68'%20style='text-anchor:middle;font-size:18px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E80×120%3C/text%3E%3C/svg%3E" alt="" data-osrc="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(94,174,186)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E"/></li>
+                    <li class="gallery_thumb"><img src="img/Tps_Inf/1.png"/></li>
+                    <li class="gallery_thumb"><img src="img/Tps_Inf/2.png"/></li>
+                    <li class="gallery_thumb"><img src="img/Tps_Inf/3.png"/></li>
+                    <li class="gallery_thumb"><img src="img/Tps_Inf/4.png"/></li>
+                    <li class="gallery_thumb"><img src="img/Tps_Inf/5.png"/></li>
+                    <li class="gallery_thumb"><img src="img/Tps_Inf/6.png"/></li>
                   </ul>
-                  <div class="gallery_featured" id="selectedImage"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='600'%20viewBox='0%200%20400%20600'%3E%3Crect%20fill='rgb(94,141,186)'%20width='400'%20height='600'/%3E%3Ctext%20x='200'%20y='280'%20style='text-anchor:middle;font-size:48px;fill:rgb(255,255,255);font-family:AvenirNextCondensed-Regular,Segoe%20UI,Tahoma,sans-serif;font-weight:normal'%3E400×600%3C/text%3E%3C/svg%3E" alt=""/></div>
-                </div>             
+                  <div style="width: 50%;" class="gallery_featured" id="selectedImage">
+                      <li class="gallery_thumb"><img src="img/Tps_Inf/1.png"/></li>
+                    </div>
+                </div>     
             </div>
-        </div>
+        <div style="height: 3000px;"></div>
         <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -641,10 +640,11 @@
 
                 thumbs[i].addEventListener( 'click', function( event ) {
 
-                  var firstChild = this.firstChild;
-                  var dataOsrc = firstChild.getAttribute('data-osrc');
-                  // console.log(dataOsrc);
-                  selectedImage.firstChild.setAttribute('src', dataOsrc);
+                    var firstChild = this.firstChild;
+                    var dataOsrc = firstChild.getAttribute('src');
+                    var ceprovo = $(selectedImage).children()[0];
+                    var chcepro = $(ceprovo).children()[0];
+                    chcepro.setAttribute('src', dataOsrc);
                 }, false);
 
               }
