@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Tesi Diploma | Moroni Luca</title>
         <meta charset="utf-8"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
@@ -63,9 +64,9 @@
             <li><div class="divider"></div></li>
             <li><a onclick="rightScroll('spazi')" class="waves-effect">Spazi</a></li>
             <li><div class="divider"></div></li>
-            <li><a onclick="rightScroll('')" class="waves-effect"></a></li>
+            <li><a onclick="rightScroll('spaziD')" class="waves-effect">Spazi Duali</a></li>
             <li><div class="divider"></div></li>
-            <li><a onclick="rightScroll('')" class="waves-effect"></a></li>
+            <li><a onclick="rightScroll('matrici')" class="waves-effect">Matrici e loro proprietà</a></li>
         </ul>
         
         
@@ -90,28 +91,28 @@
             Le tecniche di crittografia garantiscono:
             <div class="cont_list">
                 <ul>
-                    <li>la <strong>segretezza</strong>, ci garantisce che terzi non andranno a leggere il nostro messaggio</li>
-                    <li>l'<strong>autenticazione</strong>, ci garantisce l'autenticazione univoca del mittente</li>
-                    <li>l'<strong>affidabilita dei documenti</strong>, ci garantisce che il messaggio non sara modificato da terzi</li>
+                    <li>la <b>segretezza</b>, ci garantisce che terzi non andranno a leggere il nostro messaggio</li>
+                    <li>l'<b>autenticazione</b>, ci garantisce l'autenticazione univoca del mittente</li>
+                    <li>l'<b>affidabilita dei documenti</b>, ci garantisce che il messaggio non sara modificato da terzi</li>
                 </ul>
             </div>
             La cifratura rappresenta il processo attraverso il quale un messaggio viene reso incomprensibile per gli estranei.<br>
-            Per fare questo viene usato un <strong>algoritmo</strong> di cifratura che stabilisce la modalita di codifica, i simboli non cifrati compongono il <strong>Plain Text</strong>,
-            mentre i simboli cifrati e quindi sottoposti all'algoritmo si chiameranno <strong>Chyper Text</strong>.<br><br>
+            Per fare questo viene usato un <b>algoritmo</b> di cifratura che stabilisce la modalita di codifica, i simboli non cifrati compongono il <b>Plain Text</b>,
+            mentre i simboli cifrati e quindi sottoposti all'algoritmo si chiameranno <b>Chyper Text</b>.<br><br>
             In Crittografia dobbiamo distinguere:
             <ul>
-                <li><strong>Codifica</strong>, metodo di scrittura in chiave che consiste nel sostituire alcune parole con altre</li>
-                <li><strong>Cifratura</strong>, sostituisce lettere o caratteri</li>                    
+                <li><b>Codifica</b>, metodo di scrittura in chiave che consiste nel sostituire alcune parole con altre</li>
+                <li><b>Cifratura</b>, sostituisce lettere o caratteri</li>                    
             </ul>
             La regola di cifratura è generalmente composta da due elementi:
             <ul>
-                <li><strong>Regola</strong>, quello che l'algoritmo fa</li>
-                <li><strong>Parametri</strong>, come l'algoritmo fa</li>
+                <li><b>Regola</b>, quello che l'algoritmo fa</li>
+                <li><b>Parametri</b>, come l'algoritmo fa</li>
             </ul>
             Di seguito riporto alcuni concetti fondamentali della crittografia:
             <ul>
-                <li><strong>Crittoanalisi</strong>, comporta lo studio dei metodi per ottenere il significato di informazioni cifrate, normalmente il crittoanalista cerca di trrovare la chiave segreta</li>
-                <li><strong>Principio di Kerckhoffs</strong>, dichiara che la chiave in un sistema di cifratura deve essere l'unica cosa segreta, mentere l'algoritmo deve essere conosciuto dal crittoanalista</li>
+                <li><b>Crittoanalisi</b>, comporta lo studio dei metodi per ottenere il significato di informazioni cifrate, normalmente il crittoanalista cerca di trrovare la chiave segreta</li>
+                <li><b>Principio di Kerckhoffs</b>, dichiara che la chiave in un sistema di cifratura deve essere l'unica cosa segreta, mentere l'algoritmo deve essere conosciuto dal crittoanalista</li>
             </ul>
             <h3 id="CrittografiaSimmetrica">Crittografia Simmetrica</h3>
             La crittografica simmetrica (o a chiave privata) è un metodo crittografico che si basa sull'utilizzo di una signola chiave, che verra utilizzata sia per la codifica che per la decodifca.<br><br>
@@ -136,9 +137,9 @@
             </div>
 
             <h4 >Data Encriptyon Standard DES</h4>
-            <strong>DES</strong> è un algoritmo simmetrico a chiave segreta di 64 bit di cui 8 sono di controllo e gli altri 56 sono effettivamente utilizzati, quindi avremo una sicurezza di 2^56 combinazioni.
+            <b>DES</b> è un algoritmo simmetrico a chiave segreta di 64 bit di cui 8 sono di controllo e gli altri 56 sono effettivamente utilizzati, quindi avremo una sicurezza di 2^56 combinazioni.
             <h5 >Funzionamento</h5>
-            Il DES rispetta il principio di kerckhoffs e i principi di Shannon, <strong>Diffusione</strong> e <strong>Confusione</strong>.
+            Il DES rispetta il principio di kerckhoffs e i principi di Shannon, <b>Diffusione</b> e <b>Confusione</b>.
             In pratica il testo in chiaro viene suddiviso in blocchi di 8 byte e scrivendo la codifica ASCII da ogni blocco si otterrà una stringa di 64 cifre binarie, a queste cifre verra applicata una trasposizione di 56 bit alla chiave e successivamente per 16 volte si applica una funzione cifrante di sostituzione dei bit usando due porzioni della chiave di 28 bit ciascuna delle quali viene ruotata a sinistra di un certo numero di bit che dipende dal numero di iterazione; come ultimo passaggio viene fatta una trasposizione inversa a quella iniziale.<br><br>
             <div class="row">
                 <div class="col-3"></div>
@@ -193,14 +194,14 @@
                 </ul>
             </div>
             <h4 >IDEA</h4>
-            Vist che gia da prima del colpo di brute force subito dal DES si pensava che quest'ultimo avesse avuto vita breve, nel 1991 fu sviluppato il cifrario <strong>IDEA</strong><br>
+            Vist che gia da prima del colpo di brute force subito dal DES si pensava che quest'ultimo avesse avuto vita breve, nel 1991 fu sviluppato il cifrario <b>IDEA</b><br>
             <h5 id="item-1-2">Funzionamento</h5>
             L'IDEA si basa su concetti simili al DES con chiave a 128 bit.<br>
             I 64 bit (divisione in blocchi del messaggio in chiaro per l'elaborazione dell'algoritmo) vegono divisi in 4 gruppi di 16 e mescolati con 6 chiavi di 16 estratte dalla chiave a 128 bit.<br><br>
             Le chiavi sono generate tramite i seguenti passaggi:
             <ul>
                 <li>La chiave a 128 bit è divisa in 8 blocchi di 16 che costituiscono le prime 8 sottochiavi</li>
-                <li>Le cifre della chiave a 128 sono spostate di 25 bit a sinistra in modo da generare una nuova combinazione (<strong>shifting</strong>)</li>
+                <li>Le cifre della chiave a 128 sono spostate di 25 bit a sinistra in modo da generare una nuova combinazione (<b>shifting</b>)</li>
                 <li>Il secondo passo è ripetuto finche non vengono create 52 sottochiavi</li>
             </ul><br>
             <div class="row">
@@ -225,7 +226,7 @@
             </div>
             <!-- INGLESE -->
             <h4 >AES</h4>
-            <strong>AES</strong> fu progettato dai due crittologi <strong>joan Daemen</strong> e <strong>Vincent Rijmen</strong> sulla base di tre caratteristiche fondamentali:
+            <b>AES</b> fu progettato dai due crittologi <b>joan Daemen</b> e <b>Vincent Rijmen</b> sulla base di tre caratteristiche fondamentali:
             <div class="cont_list">
                 <ul>
                     <li>Resistenza contro tutti gli attacchi</li>
@@ -234,7 +235,7 @@
                 </ul>
             </div>
             <h5 id="item-1-2">Funzionamento</h5>
-            AES è un <strong>cifrario a blocchi</strong> (block cipher) con lunghezza del blocco di 128 bit, ma può avere chiavi indipendenti l'una dall'altra con lungheza variabiledi 128, 192 o 256 bit, il funzionamento dell'AES si basa su una combinazione di <strong>permutazioni</strong> e <strong>sostituzioni</strong>.<br><br>
+            AES è un <b>cifrario a blocchi</b> (block cipher) con lunghezza del blocco di 128 bit, ma può avere chiavi indipendenti l'una dall'altra con lungheza variabiledi 128, 192 o 256 bit, il funzionamento dell'AES si basa su una combinazione di <b>permutazioni</b> e <b>sostituzioni</b>.<br><br>
             La prima operazione eseguita dall'algoritmo è quella di prendere i 128 bit del blocco (16 caratteri = 128/8) e di disporli in una griglia 4*4 byte, fatto cio si sottopone il blocco a 10 round di cifratura composti da 4 operazioni di round (tranne il 10esimo round che è composto da solo 3 operazioni di round).<br><br>
             Le operazioni di round sono le seguenti:<br><br>
 
@@ -254,7 +255,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <strong>Substitute Bytes</strong>: ogni byte viene trasformato mediante una permutazione non lineare di byte che vengono mappati tramite una tabella particolare <strong>S-box</strong>
+                    <b>Substitute Bytes</b>: ogni byte viene trasformato mediante una permutazione non lineare di byte che vengono mappati tramite una tabella particolare <b>S-box</b>
                 </div>
             </div>
 
@@ -274,7 +275,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <strong>Shift Rows</strong>: le righe della matrice subiscono un semplice scorrimetno di bytes nell'array <strong>state</strong>
+                    <b>Shift Rows</b>: le righe della matrice subiscono un semplice scorrimento di bytes nell'array <b>state</b>
                 </div>
             </div>
 
@@ -294,7 +295,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <strong>Mix Columns</strong>: ogni colonna viene trasformata mediante una operazione che può essere vista come una moltiplicazione matriciale con una particolare matrice generata da un polinomio prefissato 
+                    <b>Mix Columns</b>: ogni colonna viene trasformata mediante una operazione che può essere vista come una moltiplicazione matriciale con una particolare matrice generata da un polinomio prefissato 
                 </div>
             </div>
 
@@ -314,13 +315,13 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <strong>Add Round Key</strong>: fase dove si utilizza la chiave di round e la sisomma alla matrice, questa operazione rende effettivamente sicuro il testo, non viene eseguita nel 10imo round  
+                    <b>Add Round Key</b>: fase dove si utilizza la chiave di round e la si somma alla matrice, questa operazione rende effettivamente sicuro il testo, non viene eseguita nel 10imo round.  
                 </div>
             </div>
             <h4>Limiti degli Algoritmi Simmetrici</h4>
             I cifrari a chiave Privata hanno un problema non di poco conto, ovvero quello di dover concordare la chiave prima di poter effettuare la comunicazione, per bypassare cio esistono i cifrati a chiave pubblica.<br><br>
             <h3 id="CrittografiaAsimmetrica">Crittografia Asimmetrica</h3>
-            L'idea alla base della crittografia asimmetrica è quello di avere due chiavi, una pubblica (<strong>Public Key</strong>) e una privata (<strong>Private Key</strong>), 
+            L'idea alla base della crittografia asimmetrica è quello di avere due chiavi, una pubblica (<b>Public Key</b>) e una privata (<b>Private Key</b>), 
             la marcia in più che ha questo tipo di cifratura è che avendo una chiave privata e una pubblica non è necessario lo scambio della chiave in quanto quella pubblica è reperibile da tutti.<br><br>
             Ciò comporta due modalita di funzionamento:<br><br> 
             <div class="row">
@@ -340,7 +341,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <strong>Modalita Confidenziale</strong>: sono garantite la RISERVATEZZA e l'INTEGRITA' del messaggio
+                    <b>Modalita Confidenziale</b>: sono garantite la RISERVATEZZA e l'INTEGRITA' del messaggio
                 </div>
             </div>
             <div class="row">
@@ -359,13 +360,13 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <strong>Modalita Autenticazione</strong>: garantisce l'INTEGRITA e il NON RIPUDIO ma non grantisce la RISERVATEZZA
+                    <b>Modalita Autenticazione</b>: garantisce l'INTEGRITA e il NON RIPUDIO ma non grantisce la RISERVATEZZA
                 </div>
             </div>
 
             <h4 >RSA</h4>
-            L'algoritmo <strong>RSA</strong> fu sviluppato nel 1977, l'algoritmo lavora sfruttando le proprieta dei numeri primi.
-            Lavora sfruttando una chiave che utilizza un numero <strong>n</strong>, ottenuto dal prodotto di due numeri primi <strong>p</strong> e <strong>q</strong><br>
+            L'algoritmo <b>RSA</b> fu sviluppato nel 1977, l'algoritmo lavora sfruttando le proprieta dei numeri primi.
+            Lavora sfruttando una chiave che utilizza un numero <b>n</b>, ottenuto dal prodotto di due numeri primi <b>p</b> e <b>q</b><br>
             <h5 >Funzionamento</h5>
             Il funzionamento dell'algoritmo è il seguente:
             <div class="cont_list">
@@ -379,26 +380,26 @@
                 </ul>
             </div>
             <h5 >Generazione delle Chiavi</h5>
-            Il primo passo dell'algoritmo è quello di scegliere due numeri primi <strong>p</strong> e <strong>q</strong> e calcolarne il prodotto <strong>n = p * q</strong>.<br><br>
-            Quindi viene scelto un numero <strong>e</strong>, coprimo a e più piccolo di (p-1) (q-1) (<strong>Esponente Pubblico</strong>).<br><br>
-            Partendo da <strong>n = p * q</strong> l'algoritmo procede calcolando un numero <strong>d</strong>:<br><br>
-            <strong style="margin-left: 30px;">d * e = 1 mod(p-1)(q-1)</strong><br><br>
+            Il primo passo dell'algoritmo è quello di scegliere due numeri primi <b>p</b> e <b>q</b> e calcolarne il prodotto <b>n = p * q</b>.<br><br>
+            Quindi viene scelto un numero <b>e</b>, coprimo a e più piccolo di (p-1) (q-1) (<b>Esponente Pubblico</b>).<br><br>
+            Partendo da <b>n = p * q</b> l'algoritmo procede calcolando un numero <b>d</b>:<br><br>
+            <b style="margin-left: 30px;">d * e = 1 mod(p-1)(q-1)</b><br><br>
             Da questa espressione si ottiene:
             <div class="cont_list">
                 <ul>
-                    <li>La <strong>Chiave Pubblica</strong> (e,n)</li>
-                    <li>La <strong>Chiave Privata</strong> (d,n)</li>
+                    <li>La <b>Chiave Pubblica</b> (e,n)</li>
+                    <li>La <b>Chiave Privata</b> (d,n)</li>
                 </ul>
             </div>
             <h5 >Funzionamento</h5>
-            il messaggio <strong>m</strong> che deve essere trasmesso viene anzitutto espresso in forma di numero e deve essere minore di <strong>n</strong>, ovviamente sia più grande <strong>m</strong>
+            il messaggio <b>m</b> che deve essere trasmesso viene anzitutto espresso in forma di numero e deve essere minore di <b>n</b>, ovviamente sia più grande <b>m</b>
             verrà suddiviso in blocchi.<br>      
-            Non approfondisco le specifihe di funzionamento del <strong>rsa</strong>, visto che il concetto importante da spiegare è la generazione delle chiavi.<br>
+            Non approfondisco le specifihe di funzionamento del <b>rsa</b>, visto che il concetto importante da spiegare è la generazione delle chiavi.<br>
 
             <h4>Crittografia Ibrida</h4>
             <p>
-                La crittografia <strong>ibrida</strong> è stata ideata per superare entrambi i limiti dei due sistemi di cifratura.<br>
-                Il meccanismo di questt'ultima consiste nell’utilizzare una prima cifratura asimmetrica per scambiare una chiave detta <strong>chiave di sessione</strong> che sarà utilizzata per la cifratura simmetrica.<br><br>
+                La crittografia <b>ibrida</b> è stata ideata per superare entrambi i limiti dei due sistemi di cifratura.<br>
+                Il meccanismo di questt'ultima consiste nell’utilizzare una prima cifratura asimmetrica per scambiare una chiave detta <b>chiave di sessione</b> che sarà utilizzata per la cifratura simmetrica.<br><br>
             </p>   
             <h3 id="FDE">F.D.E. (Four Dimension Encription)</h3>
             L'F.D.E. è un algoritmo a chiave simmetrica (o privata), scritto da me in JAVA, che lavora con blocchi di 256 bit in chiaro parallelizzati ad una chiave della medesima lunghezza.<br><br>
@@ -441,6 +442,25 @@
                 </div>
             </div>
             <h5>Funzionamento</h5>
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width: 30%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Crittografia/FDE_HL.PNG">
+
+                        <figcaption>
+                            FDE
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    FDE - High Level Description
+                </div>
+            </div>
             Il funziamento dell'algoritmo riprende molto quello dello shift rows dell'aes, inoltre somma ogni bit di posizione i con quello di posizione i+1, in modo ricorsivo su tutte e quattro le dimensioni (ovviamnete tranne quando i è uguale a 4, sarà il nostro punto di partenza per la decodifica), infine cifra ogni bit del blocco in chiaro con il suo corrispettivo nel blocco chiave.<br><br>
             <div class="row">
                 <div class="col-3"></div>
@@ -477,7 +497,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    in questa parte vediamo lo pseudo shift rows attuato alla dimensione uno, viene poi ripetuto nella completezza dell'algorito su tutte le dimensioni tranne la piu esterna, in modo ricorsivo.
+                    in questa parte vediamo lo pseudo-shiftrows attuato alla dimensione uno, viene poi ripetuto nella completezza dell'algorito su tutte le dimensioni tranne la più esterna, in modo ricorsivo.
                 </div>
             </div>
             Il complesso di operazioni appena descritto rappresenta il cuore dell'algoritmo e viene ripetuto quattro volte per una completa azione crittografica.<br><br>
@@ -487,9 +507,9 @@
         <div id="test2" class="col s12 container">
             <h1>Matematica</h1>
             <h3 id="gruppi">Gruppi</h3>
-            Dato un arbitrario insieme (una data collezione di elementi) non vuoto che chiameremo S; definiamo <strong>A(S)</strong> come l'insieme delle corrispondenze biunivoche tra S e se stesso.<br>
-            S è dotato di un operazione di prodotto che per convenzione indicheremo come <strong>(.)</strong>.<br><br>
-            L'operatore di prodotto <strong>(.)</strong> è tale che:
+            Dato un arbitrario insieme (una data collezione di elementi) non vuoto che chiameremo S; definiamo <b>A(S)</b> come l'insieme delle corrispondenze biunivoche tra S e se stesso.<br>
+            S è dotato di un operazione di prodotto che per convenzione indicheremo come <b>(.)</b>.<br><br>
+            L'operatore di prodotto <b>(.)</b> è tale che:
             <div class="cont_list">
                 <ul>
                     <li>a,b appartenenti a S implica che a.b appartiene ad S --> CHIUSURA</li>
@@ -502,7 +522,7 @@
             L'ordine di un gruppo è il numero di elementi presenti nel gruppo stesso<br>
             <h3 id="anelli">Anelli</h3>
             Un anello si differenzia da un gruppo per il fatto di essere una struttura con due operazioni, dette addizione e moltiplicazione, mentre un gruppo come abbiamo visto ne ha solo una.<br><br>
-            Un insieme non vuoto S è un anello associativo se in R sono definite due operazioni denotate con <strong>(+)</strong> e <strong>(.)</strong>, tali che per a,b,c appartenenti a S
+            Un insieme non vuoto S è un anello associativo se in R sono definite due operazioni denotate con <b>(+)</b> e <b>(.)</b>, tali che per a,b,c appartenenti a S
             <div class="cont_list">    
                 <ul>
                     <li>a.(b+c) = a.b + a.c e (b+c).a = b.a + c.a</li>
@@ -519,12 +539,14 @@
             L'anello S sarà commutativo se a.b = b.a con a,b appartenenti a S<br><br>
             Un anello S commutativo e con unicità si chiama Campo<br><br>
             <h3 id="anelli">Campi</h3>
-            Parlando di campi ne abbiamo individuato una classe particolare: i campi.<br>
+            Parlando di anelli ne abbiamo individuato una classe particolare: i campi.<br>
             Un campo è un anello commutativo con unicita nel quale ogni elemento non zero ha un inverso moltiplicativo.<br>
             In altre parole un campo è un anello commutativo nel quale si può dividere per un qualunque elemento non zero.<br>
+            <h5>Campo di Galois</h5>
+            ...
             <h5>Ampliamento di un campo</h5>
             Nella relazione tra due campi, sia F un campo, un campo K si dice ampliamento di F se K contiene F cioè se F è un sotto-campo di K.
-            Il grado di K su F è la dimensione di K come spazio vettoriale su F.<br>
+            Il grado di K su F è la dimensione di K come <b>spazio vettoriale</b> su F.<br>
             Si denota con [K:F] il grado di K su F.<br>
             Il caso in cui K è di dimensione finita come spazio vettoriale su F, si dirà allora che K è un ampliamento finito di F.<br><br>
             <h3 id="spazi">Spazi Vettoriali</h3>
@@ -538,6 +560,29 @@
                     <li>1.v = v</li>
                 </ul>
             </div>
+            <h5>Immagine, Nucleo</h5>
+            Dato il solito spazio vettoriale V basato su un campo F.<br>
+            Consideriamo un applicazione lineare K:V -> W, l'<b>immagine</b> sono tutti quegli elementi che vengono portati da V in W, quindi l'immagine di V in W è un sotto-gruppo di W.<br>
+            Consideriamo un applicazione lineare K:V -> W, il <b>nucleo</b> sono tutti quegli elementi di V che vanno nello 0 di W.
+            <h3 id="spaziD">Spazi Duali</h3>
+            Definiamo cosa è un <b>omomorfismo</b>, è un applicazione di un sistema algebrico ad un altro simile che ne conserva la struttura.<br>
+            L'insieme degli omomorfismi che mandano lo spazio vettoriale U nello spazio V si indica con <b>HOM(U,V)</b>.<br>
+            DEF:<br>
+            Siano S e T due elementi di HOM(U,V), ovvero due omomorfismi di spazio vettoriale di U in V:<br>
+            <div class="cont_list">    
+                <ul>
+                    <li>S+T appartiene a HOM(U,V) -> Chiusura.</li>
+                    <li>sia O l'omomorfismo di U in V che manda ogni elemento di U nello 0 di V -> trovando cosi il <b>nucleo</b> di U</li>
+                </ul>
+            </div>
+            Definito ciò possiamo dire che HOM(U,V) è un gruppo abeliano rispetto alla somma e perciò uno spazio vettoriale su F.<br>
+            Possiamo infine dichiarare che se U è uno spazio vettoriale il suo spazio duale è dato da HOM(U,V).
+            <h3 id="matrici">Matrici</h3>
+            Sia V uno spazio vettoriale n-dimensionale sopra un campo F e sia v1, ..., vn una base di V su F. se T appartiene a HOM(V,V) la sua azione (applicazione lineare) su ciascun vettore è determinata non appena se ne conosca l'azione su una base di V e, pertanto, sono esprimbili come <b>combinazione lineare</b> di v1, ..., vn su F, cioè:
+            
+            ...
+            
+            <h5>Operazioni sulle matrici</h5>
         </div>
         
         <!-- TPSI -->
@@ -552,11 +597,11 @@
             <h5>Requisiti</h5>
             <div class="cont_list">
                 <ul>
-                    <li><strong>Node.js</strong>, piattaforma event-driven per il download del framwork "cordova"</li>
-                    <li><strong>Cordova</strong>, versione 8.0.0</li>
-                    <li><strong>Plugman</strong>, versione 1.5.1, framwork utilizzato per la gestione del plug-in della nostra aplicazione</li>
-                    <li><strong>Materialize.css/.js</strong>, versione 0.100.2, framework per la gestione della parte grafica in html</li>
-                    <li><strong>JQuery.js</strong>, versione 3.3.1</li>
+                    <li><b>Node.js</b>, piattaforma event-driven per il download del framwork "cordova"</li>
+                    <li><b>Cordova</b>, versione 8.0.0</li>
+                    <li><b>Plugman</b>, versione 1.5.1, framwork utilizzato per la gestione del plug-in della nostra aplicazione</li>
+                    <li><b>Materialize.css/.js</b>, versione 0.100.2, framework per la gestione della parte grafica in html</li>
+                    <li><b>JQuery.js</b>, versione 3.3.1</li>
                 </ul>
             </div>
             <h5>Perchè in plug-in in Java</h5>
@@ -565,8 +610,8 @@
             Per la persistenza di dati leggeri e smart dalla versione 5 di HTML W3C ha rilasciato una funzionalita abbastanza importante, che permette la persistenza di piccoli dati in un database indicizzato (chiave --> informazione).<br>
             La specifica introduce due meccanismi del tutto simili ai cookies per la memorizzazione di strutture dati lato client:
             <ul>
-                <li><strong>localstorage:</strong> una chiave in questa istanza ha visibilità a livello di dominio, significa che i dati conservati nell’istanza sono visibili in tutte le finestre aperte sul dominio. Quindi questo oggetto va oltre la singola sessione.</li>
-                <li><strong>sessionstorage:</strong> la visibilità delle chiavi appartenenti a questa istanza, è limitata alla finestra del browser in cui questa variabile è stata creata. Una volta chiusa a finestra, i dati contenuti in questa istanza verranno distrutti assieme alla finestra stessa. Un’istanza di questo tipo è indicata per casi in cui una transazione è legata ad una singola finestra dell’utente che però può a sua volta avere aperte più finestre del browser con diverse transazioni tutte operative allo stesso tempo.</li>
+                <li><b>localstorage:</b> una chiave in questa istanza ha visibilità a livello di dominio, significa che i dati conservati nell’istanza sono visibili in tutte le finestre aperte sul dominio. Quindi questo oggetto va oltre la singola sessione.</li>
+                <li><b>sessionstorage:</b> la visibilità delle chiavi appartenenti a questa istanza, è limitata alla finestra del browser in cui questa variabile è stata creata. Una volta chiusa a finestra, i dati contenuti in questa istanza verranno distrutti assieme alla finestra stessa. Un’istanza di questo tipo è indicata per casi in cui una transazione è legata ad una singola finestra dell’utente che però può a sua volta avere aperte più finestre del browser con diverse transazioni tutte operative allo stesso tempo.</li>
             </ul>
             <h3 id="app">L' App</h3>
              <div class="gallery">
@@ -578,12 +623,11 @@
                     <li class="gallery_thumb"><img src="img/Tps_Inf/5.png"/></li>
                     <li class="gallery_thumb"><img src="img/Tps_Inf/6.png"/></li>
                   </ul>
-                  <div style="width: 50%;" class="gallery_featured" id="selectedImage">
+                  <div style="width: 30%;" class="gallery_featured" id="selectedImage">
                       <li class="gallery_thumb"><img src="img/Tps_Inf/1.png"/></li>
-                    </div>
+                  </div>
                 </div>     
             </div>
-        <div style="height: 3000px;"></div>
         <footer class="page-footer">
           <div class="container">
             <div class="row">
