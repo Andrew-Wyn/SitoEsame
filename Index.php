@@ -66,7 +66,9 @@
             <li><div class="divider"></div></li>
             <li><a onclick="rightScroll('spaziD')" class="waves-effect">Spazi Duali</a></li>
             <li><div class="divider"></div></li>
-            <li><a onclick="rightScroll('matrici')" class="waves-effect">Matrici e loro proprietà</a></li>
+            <li><a onclick="rightScroll('matrici')" class="waves-effect">Matrici</a></li>
+            <li><div class="divider"></div></li>
+            <li><a onclick="rightScroll('opmatrici')" class="waves-effect">Proprietà matrici</a></li>
         </ul>
         
         
@@ -226,19 +228,44 @@
             </div>
             <!-- INGLESE -->
             <h4 >AES</h4>
-            <b>AES</b> fu progettato dai due crittologi <b>joan Daemen</b> e <b>Vincent Rijmen</b> sulla base di tre caratteristiche fondamentali:
+            It isn’t feistel cipher, the encritpion and decription aren’t equals, It works in parallel over the whole input block, Design to be efficient both in hardware and software across a variety of platforms.<br>
+            It’s a block cipher which works iteratively:<br>
             <div class="cont_list">
                 <ul>
-                    <li>Resistenza contro tutti gli attacchi</li>
-                    <li>Velocità e compattezza del codice su un ampia gamma di piattaforme</li>
-                    <li>Semplicità progettuale</li>
+                    <li><b>block size</b>: 128, 192, 256 bit</li>
+                    <li><b>Key length</b>: 128, 192, 256 bit</li>
+                    <li><b>Number of round</b>: 10, 12, 14</li>
+                    <li><b>key scheduling</b>: 44, 52, 60 sub-keys</li>
                 </ul>
             </div>
-            <h5 id="item-1-2">Funzionamento</h5>
-            AES è un <b>cifrario a blocchi</b> (block cipher) con lunghezza del blocco di 128 bit, ma può avere chiavi indipendenti l'una dall'altra con lungheza variabiledi 128, 192 o 256 bit, il funzionamento dell'AES si basa su una combinazione di <b>permutazioni</b> e <b>sostituzioni</b>.<br><br>
-            La prima operazione eseguita dall'algoritmo è quella di prendere i 128 bit del blocco (16 caratteri = 128/8) e di disporli in una griglia 4*4 byte, fatto cio si sottopone il blocco a 10 round di cifratura composti da 4 operazioni di round (tranne il 10esimo round che è composto da solo 3 operazioni di round).<br><br>
-            Le operazioni di round sono le seguenti:<br><br>
+            <h5 id="item-1-2">State</h5>
+            internally, the aes algorithm’s operations are performed on a two dimensional array (matrix) of bytes called the state.<br>
+            the array of bytes in input is copied in the state matrix.<br>
+            in the end, the state matrix is copied in the output matrix.<br><br>
+            Algorithm is composed of three layers:
+            <div class="cont_list">
+                <ul>
+                    <li>linear diffusion</li>
+                    <li>non-linear diffusion</li>
+                    <li>key mixing</li>
+                </ul>
+            </div>	
+            <h5>RIJDAEL: HIGH-LEVEL DESCRIPTION:</h5>
+            <div style="margin-top: 15px; margin-bottom: 5px;" class="row">
+                <div class="col-8 cap-left">
 
+                    <div style="width: %;"60 id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/aeshl.PNG">
+
+                        <figcaption>
+                            AES
+                        </figcaption>
+
+                    </div>
+                </div>
+            </div>
+            Each round, ecxept the last one, is a uniform and parallel composition of 4 steps (the last haven't mix columns):
             <div style="margin-top: 15px; margin-bottom: 5px;" class="row">
 
 
@@ -255,7 +282,9 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <b>Substitute Bytes</b>: ogni byte viene trasformato mediante una permutazione non lineare di byte che vengono mappati tramite una tabella particolare <b>S-box</b>
+                    <b>Substitute Bytes</b>: Byte substitution using a non-linear (but invertible) S-Box
+                    S-Box is represented as a 16x16 array, rows and columns indexed by hexadecimal bits 
+                    8bit replaced as follows: 8 bits define a hexadecimal number rc, then Sr,c = binary(S-Box(r,c))
                 </div>
             </div>
 
@@ -275,7 +304,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <b>Shift Rows</b>: le righe della matrice subiscono un semplice scorrimento di bytes nell'array <b>state</b>
+                    <b>Shift Rows</b>: circular left shift of a number of bytes equal to the row number
                 </div>
             </div>
 
@@ -295,7 +324,8 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <b>Mix Columns</b>: ogni colonna viene trasformata mediante una operazione che può essere vista come una moltiplicazione matriciale con una particolare matrice generata da un polinomio prefissato 
+                    <b>Mix Columns</b>: interpret each column as a vector of length 4
+                    each column of state is replaced by another column obtained by multiplying that column with a matrix in a particular field (Galois Field)
                 </div>
             </div>
 
@@ -315,7 +345,34 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <b>Add Round Key</b>: fase dove si utilizza la chiave di round e la si somma alla matrice, questa operazione rende effettivamente sicuro il testo, non viene eseguita nel 10imo round.  
+                    <b>Add Round Key</b>: the last phase consist to sum with xor each bit of the state with each bit of the round key bit by bit.
+                </div>
+            </div>
+            <h5>AES Key Expansion</h5>
+            use 4 byte words called Wi = row of a matrixkey, subkey = 4 words<br>
+            first subkey (w3, w2, w1, w0) = cipher key<br>
+            other words are calculated as follows, for all values of i that aren’t multples of 4<br>
+
+            for the words with indexes that are multiples of 4 (w4k):
+            <div class="cont_list">
+                <ul>
+                    <li><b>rotWord</b>: bytes of w4k-1 are rotated left shift (non-linearity)</li>
+                    <li><b>subWord</b>: subBytes fn is applied to all four Bytes (Diffusion)</li>
+                    <li>the result rsk is xor’ed with w4k-4 and a round constant rconk (breaks symmetry)</li>
+                </ul>
+            </div>
+            <div style="margin-top: 15px; margin-bottom: 5px;" class="row">
+                <div class="col-8 cap-left">
+
+                    <div style="width: %;"60 id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/aesexpasion.PNG">
+
+                        <figcaption>
+                            AES
+                        </figcaption>
+
+                    </div>
                 </div>
             </div>
             <h4>Limiti degli Algoritmi Simmetrici</h4>
@@ -580,19 +637,93 @@
             <h3 id="matrici">Matrici</h3>
             Sia V uno spazio vettoriale n-dimensionale sopra un campo F e sia v1, ..., vn una base di V su F. se T appartiene a HOM(V,V) la sua azione (applicazione lineare) su ciascun vettore è determinata non appena se ne conosca l'azione su una base di V e, pertanto, sono esprimbili come <b>combinazione lineare</b> di v1, ..., vn su F, cioè:
             
-            ...
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width: 60%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Matematica/1.jpg">
+
+                        <figcaption>
+                            Algebra
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
             
-            <h5>Operazioni sulle matrici</h5>
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width: 60%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Matematica/2.jpg">
+
+                        <figcaption>
+                            Algebra
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width: 60%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Matematica/3.jpg">
+
+                        <figcaption>
+                            Algebra
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+            
+            L'insieme ordinato di n<SUP>2</SUP> numeri &alpha;<SUB>i</SUB><SUB>j</SUB> in F (campo dello spazio V) descrive completamente l'applicazione T e costituisce un mezzo per rappresentarla e metterla in pratica.
+            <h3 id="opmatrici">Operazioni sulle matrici</h3>
         </div>
         
         <!-- TPSI -->
         <div id="test3" class="col s12 container">
             <h1>TPSI & Informatica</h1>
             <h3 id="ApCord">Apache Cordova</h3>
-            Apache Cordova è un framework per lo sviluppo di applicativi per dispoditivi originariamente creato da Nitobi.<br>
-            Apache cordova permette ai programmatori di creare applicazioni mobili utilizando CSS3, HTML5, JavaScript e relativi framework invece di affidarsi ad API specifiche delle piattaforme Android, IOS o Windows Phone.<br>
+            Apache Cordova è un framework per lo sviluppo di applicativi per dispositivi originariamente creato da Nitobi.
+            Apache Cordova permette ai programmatori di creare applicazioni mobili utilizzando CSS3, HTML5, JavaScript e relativi framework invece di affidarsi ad API specifiche delle piattaforme Android, IOS o Windows Phone.
             il framework di apache incapsula il codice creato all'interno delle suddette piattaforme. Le applicazioni così generate non possono né considerarsi puramente native né basate completamente sul web.<br><br>
-            <i style="font-size: 15px">attualmente Apache Cordova supporta i sistemi operativi: IOS, BADA, BLACK BERRY, FIREFOX OS, Android, WEB OS, Windws Phone, Symbian, Tizen e Ubuntu Touch.</i><br>
+            <i style="font-size: 15px">attualmente Apache Cordova supporta i sistemi operativi: IOS, BADA, BLACK BERRY, FIREFOX OS, Android, WEB OS, Windws Phone, Symbian, Tizen e Ubuntu Touch.</i><br><br>
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width: 60%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Tps_Inf/cordova.png">
+
+                        <figcaption>
+                            Cordova
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
             <h3 id="devapp">Sviluppo App</h3>
             <h5>Requisiti</h5>
             <div class="cont_list">
@@ -604,8 +735,13 @@
                     <li><b>JQuery.js</b>, versione 3.3.1</li>
                 </ul>
             </div>
-            <h5>Perchè in plug-in in Java</h5>
-            Utilizzando tale applicazione come dimostrazione del funzionamento dell'algoritmo FDE, ed avendo sviluppato quest'ultimo in java, essendo javascript molto divverso da java, ho avuto la necessità di "scaricare" la computazione su un plug-in in java.<br>
+            <h5>Cordova e i Plug-in</h5>
+            Dalla versione 3.0 in poi, Cordova implementa nel dispositivo tutte le API come plugin e li lascia disattivati di default. 
+            Supporta inoltre due modi per aggiungere e rimuovere i plugin, a seconda del flusso di lavoro sul quale si opera:
+            • Se si utilizza un flusso di lavoro multi-piattaforma, è preferibile utilizzare la CLI implementata in cordova per aggiungere i plugin. La CLI di cordova Modifica i plugin per tutte le piattaforme utilizzate in una volta.
+            • Se si utilizza un flusso di lavoro su singole piattaforme, si consiglia l'utilizzo di un'interfaccia della riga di comando di basso livello Plugman , che installa separatamente per ciascuna piattaforma il plugin desiderato.
+            <h5>Perchè un plug-in in Java</h5>
+            Utilizzando tale applicazione come dimostrazione del funzionamento dell'algoritmo FDE, ed avendo sviluppato quest'ultimo in java, essendo Java script molto diverso da quest’ultimo, ho avuto la necessità di "scaricare" la computazione su un plug-in in java.<br>
             <h5>HTML5-storage</h5>
             Per la persistenza di dati leggeri e smart dalla versione 5 di HTML W3C ha rilasciato una funzionalita abbastanza importante, che permette la persistenza di piccoli dati in un database indicizzato (chiave --> informazione).<br>
             La specifica introduce due meccanismi del tutto simili ai cookies per la memorizzazione di strutture dati lato client:
