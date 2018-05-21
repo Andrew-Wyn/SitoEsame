@@ -635,16 +635,16 @@
             Definito ciò possiamo dire che HOM(U,V) è un gruppo abeliano rispetto alla somma e perciò uno spazio vettoriale su F.<br>
             Possiamo infine dichiarare che se U è uno spazio vettoriale il suo spazio duale è dato da HOM(U,V).
             <h3 id="matrici">Matrici</h3>
-            Sia V uno spazio vettoriale n-dimensionale sopra un campo F e sia v1, ..., vn una base di V su F. se T appartiene a HOM(V,V) la sua azione (applicazione lineare) su ciascun vettore è determinata non appena se ne conosca l'azione su una base di V e, pertanto, sono esprimbili come <b>combinazione lineare</b> di v1, ..., vn su F, cioè:
+            Sia V uno spazio vettoriale n-dimensionale sopra un campo F e sia v1, ..., vn una base di V su F. se T appartiene a HOM(V,V) la sua azione (applicazione lineare) su ciascun vettore è determinata non appena se ne conosca l'azione su una base di V e, pertanto, sono esprimbili come <b>combinazione lineare</b> di v1, ..., vn su F, cioè:<br><br>
             
             <div class="row">
                 <div class="col-3"></div>
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 60%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="img/Matematica/1.jpg">
+                        <img style="width: 100%;" src="img/Matematica/apll.PNG">
 
                         <figcaption>
                             Algebra
@@ -661,28 +661,9 @@
 
                 <div class="col-5 cap-left">
 
-                    <div style="width: 60%;" id="immagine" class="cap-left">
+                    <div style="width: 40%;" id="immagine" class="cap-left">
 
-                        <img style="width: 100%;" src="img/Matematica/2.jpg">
-
-                        <figcaption>
-                            Algebra
-                        </figcaption>
-
-                    </div>
-                </div>
-                <div class="col-4">
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-3"></div>
-
-                <div class="col-5 cap-left">
-
-                    <div style="width: 60%;" id="immagine" class="cap-left">
-
-                        <img style="width: 100%;" src="img/Matematica/3.jpg">
+                        <img style="width: 100%;" src="img/Matematica/matrice.PNG">
 
                         <figcaption>
                             Algebra
@@ -692,8 +673,7 @@
                 </div>
                 <div class="col-4">
                 </div>
-            </div>
-            
+            </div>            
             L'insieme ordinato di n<SUP>2</SUP> numeri &alpha;<SUB>i</SUB><SUB>j</SUB> in F (campo dello spazio V) descrive completamente l'applicazione T e costituisce un mezzo per rappresentarla e metterla in pratica.
             <h3 id="opmatrici">Operazioni sulle matrici</h3>
         </div>
