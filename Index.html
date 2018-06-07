@@ -10,7 +10,7 @@
     <body>
         <nav class="nav-extended">
             <div class="nav-wrapper">
-            <a href="#" class="brand-logo">FDE</a>
+            <a href="#" class="brand-logo">&nbsp;&nbsp;FDE</a>
             <a href="#" id="1" data-activates="slide-out1" class="d_n lefto button"></a>
             <a href="#" id="2" data-activates="slide-out2" class="d_n lefto button"></a>
             <a href="#" id="3" data-activates="slide-out3" class="d_n lefto button"></a>
@@ -100,7 +100,7 @@
             </div>
             La cifratura rappresenta il processo attraverso il quale un messaggio viene reso incomprensibile per gli estranei.<br>
             Per fare questo viene usato un <b>algoritmo</b> di cifratura che stabilisce la modalita di codifica, i simboli non cifrati compongono il <b>Plain Text</b>,
-            mentre i simboli cifrati e quindi sottoposti all'algoritmo si chiameranno <b>Chyper Text</b>.<br><br>
+            mentre i simboli cifrati e quindi sottoposti all'algoritmo si chiameranno <b>Chiper Text</b>.<br><br>
             In Crittografia dobbiamo distinguere:
             <ul>
                 <li><b>Codifica</b>, metodo di scrittura in chiave che consiste nel sostituire alcune parole con altre</li>
@@ -518,7 +518,18 @@
                     FDE - High Level Description
                 </div>
             </div>
-            Il funziamento dell'algoritmo riprende molto quello dello shift rows dell'aes, inoltre somma ogni bit di posizione i con quello di posizione i+1, in modo ricorsivo su tutte e quattro le dimensioni (ovviamnete tranne quando i è uguale a 4, sarà il nostro punto di partenza per la decodifica), infine cifra ogni bit del blocco in chiaro con il suo corrispettivo nel blocco chiave.<br><br>
+            <h5>Shift Rows</h5>
+            Consiste nello spostamento degli indici a sinistra, delle strutture che compongono quella di riferimento.<br>
+            Lo spostamento è indicato dalla posizione della struttura all'interno della soprastante. (molto simile allo shift rows dell'aes, solo che verrà utilizzato in modo ricorsivo in tutto il vettore a 4 indici).<br>
+            <h5>Chipher</h5>
+            Somma in xor bit a bit (reversibile), la somma è tra il bit del blocco da cifrare B<sub>ijxy</sub> nel momento della somma (ricordiamo che il blocco da cifrare è sempre in mutamento) con il blocco della chiave K<sub>ijxy</sub>.<br>
+            <h5>Sum Next</h5>
+            Somma in xor bit a bit (reversibile) tra l elemento appena cifrato con il suo successivo, ovviamente accertata la presenza del successivo.<br>
+            Essendo questa un operazione ricorsiva all interno di tutte le strutture del blocco con elemento si intende ogni elemento di ogni struttura (vettori, matrici, cubi, ...).
+            <h5>Mix Rows</h5>
+            Formalizzazione della struttura del blocco in chiaro come l'insieme di 64 vettori di dimensione 4 (in pratica ogni vettore è una riga delle 16 tabelle) appartenenti ad uno spazio vettoriale basato su un campo finito (campo di Galois) GF(2) comprendente i valori binari (0,1).<br>
+            Allo spazio vettoriale viene eseguita un applicazione lineare descritta attraverso una matrice dell applicazione lineare stessa.<br>
+            La matrice (che verra moltiplicata con i vettori) dovrà avere il determinante diverso da 0, in tal caso possiamo trovare il reciproco della matrice e quindi rendere l'applicazione reversibile.<br><br>
             <div class="row">
                 <div class="col-3"></div>
 
@@ -557,7 +568,8 @@
                     in questa parte vediamo lo pseudo-shiftrows attuato alla dimensione uno, viene poi ripetuto nella completezza dell'algorito su tutte le dimensioni tranne la più esterna, in modo ricorsivo.
                 </div>
             </div>
-            Il complesso di operazioni appena descritto rappresenta il cuore dell'algoritmo e viene ripetuto quattro volte per una completa azione crittografica.<br><br>
+            Il complesso di operazioni appena descritto rappresenta il cuore dell'algoritmo e viene ripetuto quattro volte per una completa azione crittografica.<br>
+            Allesterno di queste operazioni troviamo un altro Shift Rows rivolto alla posizione degli indici dei cubi che durante le operazioni appena illustrate non vengono modificati.<br><br>
         </div>
         
         <!-- MATEMATICA -->
@@ -825,47 +837,5 @@
         <script src="js/materialize.min.js"></script>
         <script src="js/scrollreveal.min.js"></script>
         <script src="js/js.js"></script>
-        <script>
-            var root = document.documentElement;
-            root.className = root.className.replace(/\bno-js\b/g, '') + ' js';
-
-            // Domready check in vanila javaScript
-            // Arrays and node lists
-            var ready = function ( fn ) {
-
-            // Sanity check
-              if ( typeof fn !== 'function' ) return;
-
-            // If document is already loaded, run method
-              if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
-                return fn();
-              }
-
-            // Otherwise, wait until document is loaded
-              document.addEventListener( 'DOMContentLoaded', fn, false );
-
-            };
-
-            ready(function() {
-
-              root.className = root.className.replace(/\bdombuilding\b/g, '') + ' domready';
-
-              var thumbs = document.querySelectorAll( '.gallery_thumb' );
-              var selectedImage =  document.querySelector('#selectedImage');
-
-              for ( var i = 0, len = thumbs.length; i < len; i++ ) {
-
-                thumbs[i].addEventListener( 'click', function( event ) {
-
-                    var firstChild = this.firstChild;
-                    var dataOsrc = firstChild.getAttribute('src');
-                    var ceprovo = $(selectedImage).children()[0];
-                    var chcepro = $(ceprovo).children()[0];
-                    chcepro.setAttribute('src', dataOsrc);
-                }, false);
-
-              }
-            });
-        </script>
     </body>
 </html>

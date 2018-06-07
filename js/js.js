@@ -1,4 +1,24 @@
 $(document).ready(function(){
+
+    var root = document.documentElement;
+    root.className = root.className.replace(/\bno-js\b/g, '') + ' js';
+    /*funzione in vanila javascript per la realizzazione dell'imagine viewer sez. TPSI*/
+    root.className = root.className.replace(/\bdombuilding\b/g, '') + ' domready';
+
+    var thumbs = document.querySelectorAll( '.gallery_thumb' );
+    var selectedImage =  document.querySelector('#selectedImage');
+
+    for ( var i = 0, len = thumbs.length; i < len; i++ ) {
+
+        thumbs[i].addEventListener( 'click', function( event ) {
+
+            var firstChild = this.firstChild;
+            var dataOsrc = firstChild.getAttribute('src');
+            var ceprovo = $(selectedImage).children()[0];
+            var chcepro = $(ceprovo).children()[0];
+            chcepro.setAttribute('src', dataOsrc);
+        }, false);
+    }
         
     var targ = 1;
     
