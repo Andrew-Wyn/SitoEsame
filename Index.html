@@ -68,7 +68,7 @@
             <li><div class="divider"></div></li>
             <li><a onclick="rightScroll('matrici')" class="waves-effect">Matrici</a></li>
             <li><div class="divider"></div></li>
-            <li><a onclick="rightScroll('opmatrici')" class="waves-effect">Proprietà matrici</a></li>
+            <li><a onclick="rightScroll('opmatrici')" class="waves-effect">Operazioni sulle matrici</a></li>
         </ul>
         
         
@@ -95,29 +95,42 @@
                 <ul>
                     <li>la <b>segretezza</b>, ci garantisce che terzi non andranno a leggere il nostro messaggio</li>
                     <li>l'<b>autenticazione</b>, ci garantisce l'autenticazione univoca del mittente</li>
-                    <li>l'<b>affidabilita dei documenti</b>, ci garantisce che il messaggio non sara modificato da terzi</li>
+                    <li>l'<b>affidabilita dei documenti</b>, ci garantisce che il messaggio non sarà*/ modificato da terzi</li>
                 </ul>
             </div>
             La cifratura rappresenta il processo attraverso il quale un messaggio viene reso incomprensibile per gli estranei.<br>
             Per fare questo viene usato un <b>algoritmo</b> di cifratura che stabilisce la modalita di codifica, i simboli non cifrati compongono il <b>Plain Text</b>,
             mentre i simboli cifrati e quindi sottoposti all'algoritmo si chiameranno <b>Chiper Text</b>.<br><br>
             In Crittografia dobbiamo distinguere:
-            <ul>
-                <li><b>Codifica</b>, metodo di scrittura in chiave che consiste nel sostituire alcune parole con altre</li>
-                <li><b>Cifratura</b>, sostituisce lettere o caratteri</li>                    
-            </ul>
+            <div class="cont_list">
+                <ul>
+                    <li><b>Codifica</b>, metodo di scrittura in chiave che consiste nel sostituire alcune parole con altre</li>
+                    <li><b>Cifratura</b>, sostituisce lettere o caratteri</li>                    
+                </ul>
+            </div>
             La regola di cifratura è generalmente composta da due elementi:
-            <ul>
-                <li><b>Regola</b>, quello che l'algoritmo fa</li>
-                <li><b>Parametri</b>, come l'algoritmo fa</li>
-            </ul>
+            <div class="cont_list">
+                <ul>
+                    <li><b>Regola</b>, quello che l'algoritmo fa</li>
+                    <li><b>Parametri</b>, come l'algoritmo fa</li>
+                </ul>            
+            </div>
             Di seguito riporto alcuni concetti fondamentali della crittografia:
-            <ul>
-                <li><b>Crittoanalisi</b>, comporta lo studio dei metodi per ottenere il significato di informazioni cifrate, normalmente il crittoanalista cerca di trrovare la chiave segreta</li>
-                <li><b>Principio di Kerckhoffs</b>, dichiara che la chiave in un sistema di cifratura deve essere l'unica cosa segreta, mentere l'algoritmo deve essere conosciuto dal crittoanalista</li>
-            </ul>
+            <div class="cont_list">
+                <ul>
+                    <li><b>Crittoanalisi</b>, comporta lo studio dei metodi per ottenere il significato di informazioni cifrate, normalmente il crittoanalista cerca di trovare la chiave segreta</li>
+                    <li><b>Principio di Kerckhoffs</b>, dichiara che la chiave in un sistema di cifratura deve essere l'unica parte segreta, mentre l'algoritmo deve essere conosciuto dal crittoanalista</li>
+                </ul>
+            </div>
+            Princio di Shannon
+            <div class="cont_list">
+                <ul>
+                    <li>la <b>confusione</b> è il fatto che la relazione tra la chiave e il testo cifrato sia quanto più complessa e non correlata possibile in modo tale che non si possa risalire ad essa a partire dal testo cifrato.</li>
+                    <li>la <b>diffusione</b> è la capacità dell'algoritmo di distribuire le correlazioni statistiche del testo lungo tutto l'alfabeto utilizzato dall'algoritmo di cifratura rendendo quanto più difficile possibile un attacco statistico.</li>
+                </ul>
+            </div>
             <h3 id="CrittografiaSimmetrica">Crittografia Simmetrica</h3>
-            La crittografica simmetrica (o a chiave privata) è un metodo crittografico che si basa sull'utilizzo di una signola chiave, che verra utilizzata sia per la codifica che per la decodifca.<br><br>
+            La crittografica simmetrica (o a chiave privata) è un metodo crittografico che si basa sull'utilizzo di una signola chiave, che verrà utilizzata sia per la codifica che per la decodifca.<br><br>
             <div class="row">
                 <div class="col-3"></div>
 
@@ -128,7 +141,7 @@
                         <img style="width: 100%;" src="img/Crittografia/CrittografiaSimm/1.png">
 
                         <figcaption>
-                            crittografica simmetrica
+                            crittografia simmetrica
                         </figcaption>
 
                     </div>
@@ -196,7 +209,7 @@
                 </ul>
             </div>
             <h4 >IDEA</h4>
-            Vist che gia da prima del colpo di brute force subito dal DES si pensava che quest'ultimo avesse avuto vita breve, nel 1991 fu sviluppato il cifrario <b>IDEA</b><br>
+            Visto che gia da prima del colpo di brute force subito dal DES si pensava che quest'ultimo avesse avuto vita breve, nel 1991 fu sviluppato il cifrario <b>IDEA</b><br>
             <h5 id="item-1-2">Funzionamento</h5>
             L'IDEA si basa su concetti simili al DES con chiave a 128 bit.<br>
             I 64 bit (divisione in blocchi del messaggio in chiaro per l'elaborazione dell'algoritmo) vegono divisi in 4 gruppi di 16 e mescolati con 6 chiavi di 16 estratte dalla chiave a 128 bit.<br><br>
@@ -437,7 +450,8 @@
                 </ul>
             </div>
             <h5 >Generazione delle Chiavi</h5>
-            Il primo passo dell'algoritmo è quello di scegliere due numeri primi <b>p</b> e <b>q</b> e calcolarne il prodotto <b>n = p * q</b>.<br><br>
+            Il primo passo dell'algoritmo è quello di scegliere due numeri primi <b>p</b> e <b>q</b> e calcolarne il prodotto <br> 
+            <b>n = p * q</b>.<br><br>
             Quindi viene scelto un numero <b>e</b>, coprimo a e più piccolo di (p-1) (q-1) (<b>Esponente Pubblico</b>).<br><br>
             Partendo da <b>n = p * q</b> l'algoritmo procede calcolando un numero <b>d</b>:<br><br>
             <b style="margin-left: 30px;">d * e = 1 mod(p-1)(q-1)</b><br><br>
@@ -459,7 +473,7 @@
                 Il meccanismo di questt'ultima consiste nell’utilizzare una prima cifratura asimmetrica per scambiare una chiave detta <b>chiave di sessione</b> che sarà utilizzata per la cifratura simmetrica.<br><br>
             </p>   
             <h3 id="FDE">F.D.E. (Four Dimension Encription)</h3>
-            L'F.D.E. è un algoritmo a chiave simmetrica (o privata), scritto da me in JAVA, che lavora con blocchi di 256 bit in chiaro parallelizzati ad una chiave della medesima lunghezza.<br><br>
+            L'F.D.E. è un algoritmo a chiave simmetrica (o privata), che lavora con blocchi di 256 bit in chiaro parallelizzati ad una chiave della medesima lunghezza.<br><br>
             <div class="row">
                 <div class="col-3"></div>
 
@@ -479,7 +493,7 @@
 
                 </div>
             </div>
-            La peculiarità dell'F.D.E. consiste nell' indicizzare, con 4 indici, ogni singolo bit (lavorando percio con due vettori a quattro dimensioni da 256bit), ciò garantisce un estrema malleabilità del flusso di bit.<br><br>
+            La peculiarità dell'F.D.E. consiste nell' indicizzare, con 4 indici, ogni singolo bit (lavorando perciò con due vettori a quattro indici da 256bit), ciò garantisce un estrema malleabilità del flusso di dati.<br><br>
             <div class="row">
                 <div class="col-3"></div>
 
@@ -518,7 +532,7 @@
                     FDE - High Level Description
                 </div>
             </div>
-            <h5>Shift Rows</h5>
+            <h5>ShiftIndexes</h5>
             Consiste nello spostamento degli indici a sinistra, delle strutture che compongono quella di riferimento.<br>
             Lo spostamento è indicato dalla posizione della struttura all'interno della soprastante. (molto simile allo shift rows dell'aes, solo che verrà utilizzato in modo ricorsivo in tutto il vettore a 4 indici).<br>
             <h5>Chipher</h5>
@@ -568,8 +582,46 @@
                     in questa parte vediamo lo pseudo-shiftrows attuato alla dimensione uno, viene poi ripetuto nella completezza dell'algorito su tutte le dimensioni tranne la più esterna, in modo ricorsivo.
                 </div>
             </div>
-            Il complesso di operazioni appena descritto rappresenta il cuore dell'algoritmo e viene ripetuto quattro volte per una completa azione crittografica.<br>
-            Allesterno di queste operazioni troviamo un altro Shift Rows rivolto alla posizione degli indici dei cubi che durante le operazioni appena illustrate non vengono modificati.<br><br>
+            In conslusione le operazioni di cifratura che vanno ad operare sulla struttura dati e il passaggio dell'algoritmo su ogni bit sono ripetuti per quattro round, in ogni round sono presenti le operazioni sopra riportate, mentre prima dell'avvio di ogni round è presente uno ShiftIndexes sull'indice piu esterno che durante i singoli round non viene toccato.<br><br>
+            <h5>Implementazione in GOLANG</h5>
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width:30%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Crittografia/golangenc.PNG">
+
+                        <figcaption>
+                            FDE
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    Encryption in GO
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-5 cap-left">
+
+                    <div style="width:30%;" id="immagine" class="cap-left">
+
+                        <img style="width: 100%;" src="img/Crittografia/golangdec.PNG">
+
+                        <figcaption>
+                            FDE
+                        </figcaption>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    Decryption in GO
+                </div>
+            </div>
         </div>
         
         <!-- MATEMATICA -->
@@ -611,8 +663,6 @@
             Parlando di anelli ne abbiamo individuato una classe particolare: i campi.<br>
             Un campo è un anello commutativo con unicita nel quale ogni elemento non zero ha un inverso moltiplicativo.<br>
             In altre parole un campo è un anello commutativo nel quale si può dividere per un qualunque elemento non zero.<br>
-            <h5>Campo di Galois</h5>
-            ...
             <h5>Ampliamento di un campo</h5>
             Nella relazione tra due campi, sia F un campo, un campo K si dice ampliamento di F se K contiene F cioè se F è un sotto-campo di K.
             Il grado di K su F è la dimensione di K come <b>spazio vettoriale</b> su F.<br>
@@ -778,7 +828,7 @@
                 <ul>
                     <li><b>Node.js</b>, piattaforma event-driven per il download del framwork "cordova"</li>
                     <li><b>Cordova</b>, versione 8.0.0</li>
-                    <li><b>Plugman</b>, versione 1.5.1, framwork utilizzato per la gestione del plug-in della nostra aplicazione</li>
+                    <li><b>Plugman</b>, versione 1.5.1, dipendenza utilizzata per la gestione del plug-in in java della nostra aplicazione</li>
                     <li><b>Materialize.css/.js</b>, versione 0.100.2, framework per la gestione della parte grafica in html</li>
                     <li><b>JQuery.js</b>, versione 3.3.1</li>
                 </ul>
@@ -786,8 +836,12 @@
             <h5>Cordova e i Plug-in</h5>
             Dalla versione 3.0 in poi, Cordova implementa nel dispositivo tutte le API come plugin e li lascia disattivati di default. 
             Supporta inoltre due modi per aggiungere e rimuovere i plugin, a seconda del flusso di lavoro sul quale si opera:
-            • Se si utilizza un flusso di lavoro multi-piattaforma, è preferibile utilizzare la CLI implementata in cordova per aggiungere i plugin. La CLI di cordova Modifica i plugin per tutte le piattaforme utilizzate in una volta.
-            • Se si utilizza un flusso di lavoro su singole piattaforme, si consiglia l'utilizzo di un'interfaccia della riga di comando di basso livello Plugman , che installa separatamente per ciascuna piattaforma il plugin desiderato.
+            <div class="cont_list">
+                <ul>
+                    <li>Se si utilizza un flusso di lavoro multi-piattaforma, è preferibile utilizzare la <b>CLI</b> implementata in cordova per aggiungere i plugin. La CLI di cordova Modifica i plugin per tutte le piattaforme utilizzate in una volta.</li>
+                    <li>Se si utilizza un flusso di lavoro su singole piattaforme, si consiglia l'utilizzo di un'interfaccia della riga di comando di basso livello <b>Plugman</b> , che installa separatamente per ciascuna piattaforma il plugin desiderato.</li>
+                </ul>
+            </div>
             <h5>Perchè un plug-in in Java</h5>
             Utilizzando tale applicazione come dimostrazione del funzionamento dell'algoritmo FDE, ed avendo sviluppato quest'ultimo in java, essendo Java script molto diverso da quest’ultimo, ho avuto la necessità di "scaricare" la computazione su un plug-in in java.<br>
             <h5>HTML5-storage</h5>
@@ -801,7 +855,6 @@
              <div class="gallery">
                   <ul class="gallery_thumbnails">
                     <li class="gallery_thumb"><img src="img/Tps_Inf/1.png"/></li>
-                    <li class="gallery_thumb"><img src="img/Tps_Inf/2.png"/></li>
                     <li class="gallery_thumb"><img src="img/Tps_Inf/3.png"/></li>
                     <li class="gallery_thumb"><img src="img/Tps_Inf/4.png"/></li>
                     <li class="gallery_thumb"><img src="img/Tps_Inf/5.png"/></li>
@@ -820,9 +873,9 @@
                 <p class="grey-text text-lighten-4">Contenuto multimediale ideato e sviluppato da:<br> Moroni Luca</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Alternanza</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.foodaddiction.it/public/mappa/index.php" target="_blank">FoodAddiction</a></li>
                 </ul>
               </div>
             </div>

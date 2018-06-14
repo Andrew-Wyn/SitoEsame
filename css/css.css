@@ -164,6 +164,11 @@ figure:hover:before {
     margin-bottom: 10px;
 }
 
+.cont_list {
+    text-align: center;
+    margin: 5px;
+}
+
 .cont_list > ul > li{
     background-color: #ee6e73;
     color: white;
@@ -174,6 +179,7 @@ figure:hover:before {
     font-size: 18px;
     padding: 3px;
     transition: all 0.3s ease-in;
+    /*display: inline-block;*/
 }
 
 .cont_list > ul > li:hover{
